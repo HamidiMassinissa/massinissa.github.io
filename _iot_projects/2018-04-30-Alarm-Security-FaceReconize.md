@@ -4,11 +4,11 @@ authors:
     - Nabil AMEZIANE
     - Abderrahmen MRABET
 video-id: x1CnxpXvpSQ
+description: SECURITY ALARM WITH FACE RECOGNITION SYSTEM
 ---    
 
-In this project we will learn how to make an Arduino Security and System that uses facial recognition.
-
-The alarm gets activated in 03 seconds after pressing the A button. For detecting objects it uses an ultrasonic sensor. Once the alarm detects something a buzzer starts emitting a sound.  In order to stop the alarm we need to insert a 4 digits password or get recognized by the web camera. The preset password is 1234 but we also have the possibility to change it by pressing the B button and enterring the password change menu where first we need to enter the current password in order to continue and then enter the new 4 digits password. Once the password is changed, the next time we activate the alarm, we will only be able to stop the alarm by entering the new password. If we enter a wrong password we will get an error message.
+In this project we will learn how to make an Arduino Security and Alarm System. You can watch the following video or read the written tutorial below.
+The alarm activates in 03 seconds after pressing the A button. For detecting objects it uses an ultrasonic sensor, and once the alarm detect something a buzzer starts emitting a sound.  In order to stop the alarm we need to insert a 4 digits password or the web camera finds a face registered in the dataSet at the beginning of the facial recognition program . The preset password is 1234 but we also have the possibility to change it by pressing the B button we enter the password change menu where first we need to enter the current password in order to continue and then enter the new 4 digits password. Once the password is changed, the next time we activate the alarm, we will only be able to stop the alarm by entering the new password. If we enter a wrong password we will get a message that we need to try again.
 
 # Hardware parts used
 * Arduino Mega 2560 (Controller Board)
@@ -21,7 +21,7 @@ The alarm gets activated in 03 seconds after pressing the A button. For detectin
 * Potentiometer (10 KOhm)
 * USB Cable (2.0 OR HIGHER) 
 * Personal Computer (Raspberry Pi 3 - Recommanded)
-* Web Camera (2.0 OR HIGHER)
+* Web Camera (2.0 MegaPixel OR HIGHER)
 
 # Developed software
 * alarm_security.ino (Arduino program controller)
@@ -45,4 +45,4 @@ The alarm gets activated in 03 seconds after pressing the A button. For detectin
 # IDE
 * Arduino I.D.E
 * PyCharm-professionnal
- 
+  
