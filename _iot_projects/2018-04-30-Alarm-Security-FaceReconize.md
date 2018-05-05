@@ -24,10 +24,10 @@ The alarm gets activated in 03 seconds after pressing the A button. For detectin
 * Web Camera (2.0 MegaPixel OR HIGHER)
 
 # Developed software
-* alarm_security.ino (Arduino program controller)
-* dataSet.py (Program take 200 pictures and save it in /dataSet folder)
-* trainner.py (Program train Machine Learning Model to generate the trainner.YML file in /trainner folder)
-* reconize.py (Program using ML Model to reconize the registred faces with percentage and name of the person Or unknown person)
+* `alarm_security.ino` (Arduino program controller)
+* `dataSet.py` (Program take 200 pictures and save it in `/dataSet` folder)
+* `trainner.py` (Program train Machine Learning Model to generate the `trainner.YML` file in `/trainner` folder)
+* `reconize.py` (Program using ML Model to reconize the registred faces with percentage and name of the person Or unknown person)
 
 # Programming languages
 * Python3
