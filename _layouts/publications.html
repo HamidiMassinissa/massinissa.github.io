@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="publication">
+    <h2>{{ page.publication-title }}</h2>
+
+    <div class="publication-excerpt">
+        {{ page.publication-excerpt }}
+    </div>
+
+    <div class="authors">
+        {{ page.first-author }}
+        {% for author in page.authors %}
+            , {{ author }}
+        {% endfor %}
+    </div>
+
+    <div class="conference">
+        <i>{{ page.conference }}</i>
+    </div>
+
+    <div class="links">
+        <!--
+            TODO
+            if available (not null)
+         -->
+         <a href="{{ page.paper-link }}">Paper</a>
+         <a href="{{ page.paper-website }}">Website</a>
+         <a href="{{ page.paper-slides }}">Slides</a>
+         <a href="{{ page.paper-video }}">Video</a>
+    </div>
+</article>

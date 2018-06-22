@@ -92,5 +92,9 @@ keep_files: [external, misc, .git, testsetperformances]
 collections:
     iot_projects:
         output: true
+    teaching:
+        output: true
+    publications:
+        output: true
 
 github_repo: hamidimassinissa/ai-deadlines
