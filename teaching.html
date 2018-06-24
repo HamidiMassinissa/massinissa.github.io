@@ -6,11 +6,33 @@ layout: default
   {% for post in site.teaching %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-      <div class="entry">
+      <!--
+          <div class="entry">
         {{ post.excerpt }}
       </div>
+      -->
+
+     <div class="subtitle">
+         <i>{{ post.level }}, {{ post.institution }}</i>
+     </div>
+
+     <div class="description">
+         {{ post.content }}
+     </div>
+
+     <div class="teachers">
+         <i>
+         <b>
+             {{ post.lecturer }}
+             {% for assistant in post.assistants %}
+             , {{ assistant }}
+             {% endfor %}
+         </b>
+         </i>
+     </div>
+
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>

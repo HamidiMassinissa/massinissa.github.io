@@ -6,10 +6,19 @@ layout: default
   {% for post in site.publications %}
     <article class="post">
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.publication-title }}</a></h2>
 
-      <div class="entry">
-        {{ post.publication-excerpt }}
+      <div class="authors">
+          <b>
+          {{ post.first-author }}
+          {% for author in post.authors %}
+              , {{ author }}
+          {% endfor %}
+          </b>
+      </div>
+
+      <div class="conference">
+          <i>{{ post.conference }}</i>
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>

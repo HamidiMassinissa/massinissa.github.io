@@ -10,10 +10,12 @@ layout: default
     </div>
 
     <div class="authors">
+        <b>
         {{ page.first-author }}
         {% for author in page.authors %}
             , {{ author }}
         {% endfor %}
+        </b>
     </div>
 
     <div class="conference">
