@@ -12,4 +12,5 @@ first-supervisor: <a href="https://www.lipn.fr/~osmani">Aomar Osmani</a>
 supervisors:
     - <a href="https://www.lipn.fr/~hamidi">Massinissa Hamidi</a>
 status: available
+get-in-touch: hamidi@lipn.univ-paris13.fr
 ---
