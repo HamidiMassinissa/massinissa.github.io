@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+<article class="internship">
+    <h2>{{ page.title }}</h2>
+
+    <div class="context">
+        <b>Context:</b> {{ page.context }}
+    </div>
+
+    <div class="description">
+        <b>Description:</b> {{ page.description }}
+    </div>
+
+    <div class="prerequisities">
+        <b>Prerequisites:</b>
+        <ul>
+        {% for prerequisite in page.prerequisites %}
+            <li>{{ prerequisite }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    <div class="institution">
+        <b>Institution:</b> {{ page.institution }}
+    </div>
+
+    <div class="supervisors">
+        <b>Supervisors:</b>
+        <i>
+        {{ page.first-supervisor }}
+        {% for supervisor in page.supervisors %}
+            , {{ supervisor }}
+        {% endfor %}
+        </i>
+    </div>
+
+    <div class"status">
+        <b>Status:</b> {{ page.status }}
+    </div>
+</article>

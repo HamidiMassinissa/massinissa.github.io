@@ -96,5 +96,7 @@ collections:
         output: true
     publications:
         output: true
+    internships:
+        output: true
 
 github_repo: hamidimassinissa/ai-deadlines
