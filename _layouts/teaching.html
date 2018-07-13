@@ -13,16 +13,50 @@ layout: default
         {{ content }}
     </div>
 
-    <div class="teachers">
-        <i>
-        <b>
-            {{ page.lecturer }}
-            {% for assistant in page.assistants %}
-            , {{ assistant }}
-            {% endfor %}
-        </b>
-        </i>
-    </div>
+    <section id="section-schedule">
+        <h2>Schedule</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <td align="center" width="15%">
+                        <b>#</b>
+                    </td>
+                    <td align="center" width="15%">
+                        <b>Date</b>
+                    </td>
+                    <td align="center" width="60%">
+                        <b>Description</b>
+                    </td> 
+                    <td align="center">
+                        <b>Course Materials</b>
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lecture 1</td>
+                    <td>To come ...</td>
+                    <td>To come ...</td>
+                    <td>To come ...</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="teachers">
+        <h2>Instructors</h2>
+        <div class="container">
+            <i>
+            <b>
+                {{ page.lecturer }}
+                {% for assistant in page.assistants %}
+                , {{ assistant }}
+                {% endfor %}
+            </b>
+            </i>
+        </div>
+    </section>
 
     <div class="link">
         <a href="{{ page.link }}">Link to course page</a>
